@@ -2,8 +2,20 @@
 
 .jumbotron-fluid {
   font-family: 'vanillaW';
-  color: blue;
+  color: rgb(85, 73, 66);
+  text-align: center;
+
 }
+
+body {
+  background-image: url("brickwalls.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: aliceblue;
+  background-color: black;
+}
+
 
 @font-face {
   font-family: 'vanillaW';
