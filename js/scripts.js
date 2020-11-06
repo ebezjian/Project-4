@@ -12,7 +12,7 @@ PizzaOrder.prototype.priceAmount = function(){
   let price = 0;
   if (this.sizes === "Large") {
     price += 15;
-    console.log(price);
+    
   }
   if (this.sizes === "Medium") {
     price += 10;
@@ -35,8 +35,9 @@ $(document).ready(function(){
     
     let grandAmount = $("#totalCost").val();
     let currentAmount = newPizza.priceAmount();
-    console.log(grandAmount. currentAmount);
-    $("#totalCost").val((parseInt(currentAmount) + parseInt(grandAmount)));
+    console.log(typeof currentAmount);
+    let totalAmount = parseInt(currentAmount || 0 ) + parseInt(grandAmount || 0);
+    $("#totalCost").val(totalAmount);
 
     $("#checkList").append("<li>" + newPizza.sizes + newPizza.toppings + newPizza.cost + "</li>");
   })
