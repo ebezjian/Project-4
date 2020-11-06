@@ -19,8 +19,17 @@ PizzaOrder.prototype.priceAmount = function(){
   if (this.sizes === "Small") {
     price += 5;
   }
-  return price + this.cost;
+  return price * this.cost;
 }
 //User Logic
-
+$(document).ready(function(){
+  $("form.orderForm").submit(function(event){
+    event.preventDefault();
+    const inputSize = $("#sizes").find(":selected").text();
+    const inputToppings = $("#toppings").find(":selected").text();
+    const amount = $("#amount").val();
+    let newPizza = new PizzaOrder(inputSize, inputToppings, amount);
+    $("#totalCost").text("$" + newPizza.priceAmount());
+  })
+})
 
