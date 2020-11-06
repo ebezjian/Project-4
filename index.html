@@ -10,22 +10,41 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="container">
-    <div class="jumbotron jumbotron-fluid">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
       <h1> Order some Pizza</h1>
-    </div>
+  </div>
+</div>
+  <div class="container">
     <div class="row">
       <div class="col-md-6">
         <h2>Create Your Pizza</h2>
-        <hr>
-        <form class="orderForm">
-          <select class="form-group" id="sizing">
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-          </select>
-        </form>
+        
+    <form class="orderForm">
+      <select class="form-group" id="sizes">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+      </select>  
       </div>
+      <div class="col-md-6">
+        <h2>Pick your Toppings</h2>
+        <select class="form-group" id="toppings">
+          <option value="none" class="meat">None</option>
+          <option value="chicken" class="meat">Chicken</option>
+          <option value="pepperoni" class="meat">Pepperoni</option>
+          <option value="steak" class="meat">Steak</option>
+        </select>
+        <h2>Total</h2>
+        <div class="form-group">
+          <input type="number" name="amount" value="" id="amount">
+        </div>
+        <button type="submit" class="btn">Checkout</button>
+     </form> 
+
+       
+      
+    
     </div>
     </div>
   </div>
