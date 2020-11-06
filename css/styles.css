@@ -1,20 +1,22 @@
 #leftSide {
-  text-align: left;
+  text-align: center  
 }
 
 #centerSide{
-  text-align: center;
-}
-
-#rightside{
   text-align: right;
+  color: black;  
+  }
+
+
+#rightSide{
+  text-align: center;
+  color: black;
 }
 
 .jumbotron-fluid {
   font-family: 'vanillaW';
   color: rgb(85, 73, 66);
   text-align: center;
-
 }
 
 body {
@@ -24,7 +26,8 @@ body {
   background-size: cover;
   color: aliceblue;
   background-color: black;
-  
+  background-attachment: fixed;
+    
 }
 .btn {
   color: aliceblue;
@@ -35,3 +38,4 @@ body {
   font-family: 'vanillaW';
   src: url(vanilla\ whale.ttf);
 }
+

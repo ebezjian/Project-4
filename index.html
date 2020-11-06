@@ -15,11 +15,12 @@
       <h1> Order some Pizza</h1>
     </div>
   </div>
-  <div class="container">
+  <form class="orderForm">
+  <div class="container1">
     <div class="row">
       <div class="col-md-2" id="leftSide">
         <div class="orderList">
-        <h3>Here are your items so far</h3>
+        <h3>Items</h3>
           <ul id="checkList"></ul>
         </div>
         <button type="submit" class="btn">Add and see your Total</button>  
@@ -28,7 +29,7 @@
       <div class="col-md-5" id="centerSide">
         <h2>Create Your Pizza</h2>
         
-    <form class="orderForm">
+    
       <select class="form-group" id="sizes">
         <option value="small">Small</option>
         <option value="medium">Medium</option>
@@ -43,7 +44,7 @@
           <option value="pepperoni" class="meat">Pepperoni</option>
           <option value="steak" class="meat">Steak</option>
         </select>
-        <h2>Total</h2>
+        <h2>How many?</h2>
         <div class="form-group">
           <input type="number" name="amount" value="" id="amount">
         </div>
