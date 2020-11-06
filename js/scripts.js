@@ -32,8 +32,12 @@ $(document).ready(function(){
     const inputToppings = $("#toppings").find(":selected").text();
     let amount = $("#amount").val();
     let newPizza = new PizzaOrder(inputSize, inputToppings, amount);
-    console.log(newPizza);
-    $("#totalCost").text("$" + newPizza.priceAmount());
+    
+    let grandAmount = $("#totalCost").val();
+    let currentAmount = newPizza.priceAmount();
+    console.log(grandAmount. currentAmount);
+    $("#totalCost").val((parseInt(currentAmount) + parseInt(grandAmount)));
+
     $("#checkList").append("<li>" + newPizza.sizes + newPizza.toppings + newPizza.cost + "</li>");
   })
 })
