@@ -19,14 +19,16 @@
 
 | Behavior                                                        | Input     | Output    |
 | --------------------------------------------------------------- | --------- | --------- |
+| Instance will show correct inputs| let newOrder = new PizzaOrder ("Large",["Mushroom"], 4); | PizzaOrder {sizes: "Large", toppings: Array(1), cost: 4}|
 | It will understand selection of sizes | user input select: "Large" | "Large" |
 | it will understand selection of options| select: "Mushrooms | "Mushrooms" |
 | It will add pricing based on the selection | Large and Mushroom selected| Large : $20, Mushroom: $2|
 | it will add all the pricing for a total on click | Large & Mushroom | total on click : $22|
 
 
-to add later:
-| It will delete an item from the cart | 4 | 0, 1, 2 won't you be my neighbor, 4.|
+
+
+
 
 
 ## Bugs
