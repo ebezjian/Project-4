@@ -1,0 +1,11 @@
+
+
+.jumbotron-fluid {
+  font-family: 'vanillaW';
+  color: blue;
+}
+
+@font-face {
+  font-family: 'vanillaW';
+  src: url(vanilla\ whale.ttf);
+}

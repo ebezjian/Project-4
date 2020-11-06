@@ -24,7 +24,7 @@
 | it will understand selection of options| select: "Mushrooms | "Mushrooms" |
 | It will add pricing based on the selection | Large and Mushroom selected| Large : $20, Mushroom: |
 | it will add all the pricing for a total on click | Large & Mushroom | total on click : $20|
-| it will show list of items selected to user |  | total on click : $20|
+| it will show list of items selected to user | select: large, mushroom x2 | "Size: Large, Toppings:Mushroom, x2|
 
 
 
