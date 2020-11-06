@@ -1,4 +1,14 @@
+#leftSide {
+  text-align: left;
+}
 
+#centerSide{
+  text-align: center;
+}
+
+#rightside{
+  text-align: right;
+}
 
 .jumbotron-fluid {
   font-family: 'vanillaW';
@@ -14,6 +24,10 @@ body {
   background-size: cover;
   color: aliceblue;
   background-color: black;
+  
+}
+.btn {
+  color: aliceblue;
 }
 
 
